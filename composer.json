@@ -1,0 +1,42 @@
+{
+    "name": "amirandev/openadmin-summernote",
+    "description": "Integrate Summernote editor into open-admin",
+    "type": "library",
+    "keywords": [
+        "open-admin",
+        "wysiwyg",
+        "extension",
+        "editor",
+        "Summernote"
+    ],
+    "homepage": "https://github.com/amirandev/openadmin-summernote",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amirandev"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": ">=7.0",
+        "open-admin-org/open-admin": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "laravel/laravel": "~9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amirandev\\OpenadminSummernote\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amirandev\\OpenadminSummernote\\SummernoteServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
